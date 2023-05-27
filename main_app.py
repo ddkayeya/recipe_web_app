@@ -6,5 +6,5 @@ st.title('タイトル')
 st.caption('これはテストウエブアプリです。')
 
 image= Image.open('./data/022_0001_recipe0403.jpg')
-st.image(image,width=600)
+st.image(image,width=300)
 
