@@ -30,13 +30,10 @@ with col1:
             with col2:
                 result = df[df[func_category].str.contains('〇', na=False)]
                 result = result[result[category].str.contains('〇', na=False)]
+                image=list(result[result['image']])
+                result=result[result['料理名']]
                 st.table(result)
-                # data:str=''
-                # if category=='簡単':
-                #     pass
-                # elif category=='電子レンジ':
-                #     pass
-                # else:
-                #     pass
-                # image= Image.open(data)
-                # st.image(image,width=400)
+                
+                for i in image:
+                    image= Image.open(f'./data/{i}')
+                    st.image(image,width=400)
