@@ -4,9 +4,7 @@ from datetime import datetime
 
 st.title('レシピ検索')
 st.caption('条件でレシピが検索できます。')
-
 col1,col2 = st.columns(2)
-
 with col1:
     with st.form(key='profile_form'):
         #ラジオ
