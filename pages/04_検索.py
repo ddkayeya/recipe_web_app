@@ -38,4 +38,4 @@ with col1:
                 for i,n in zip(image,name):
                     image= Image.open(f'./data/{i}')
                     st.image(image,width=400)
-                    st.download_button(n,image)
+                    st.download_button(n,f'./data/{i}')
