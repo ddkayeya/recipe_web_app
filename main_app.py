@@ -7,7 +7,8 @@ st.set_page_config(
     initial_sidebar_state="auto")
 
 st.title('ご近所食事会レシピ集')
-st.caption('多職種監修')
+st.header('多職種監修')
+st.text('レシピを検索するアプリです')
 
 image= Image.open('./data/0001_recipe0403.jpg')
-st.image(image,width=500)
+st.image(image,use_column_width=True)

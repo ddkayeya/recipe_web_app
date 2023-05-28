@@ -36,6 +36,6 @@ with col1:
                 
                 for i,n in zip(image,name):
                     image= Image.open(f'./data/{i}')
-                    st.image(image,width=400)
+                    st.image(image,use_column_width=True)
                     with open(f'./data/{i}', "rb") as file:
                         st.download_button(n,data=file,file_name=f'{n}.jpg',mime='image/jpg')
