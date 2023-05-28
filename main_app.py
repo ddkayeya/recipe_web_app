@@ -1,10 +1,9 @@
 import streamlit as st
 from PIL import Image
-from datetime import datetime
 
-st.title('タイトル')
-st.caption('これはテストウエブアプリです。')
+st.title('ご近所食事会レシピ集')
+st.caption('多職種監修')
 
-image= Image.open('./data/022_0001_recipe0403.jpg')
+image= Image.open('./data/0001_recipe0403.jpg')
 st.image(image,width=300)
 
