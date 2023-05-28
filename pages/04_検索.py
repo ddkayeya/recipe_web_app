@@ -21,7 +21,7 @@ with col1:
         #ラジオ
         category = st.radio(
             '調理',
-            ('簡単','電子レンジ','その他'))
+            ('簡単','電子レンジ'))
         
         submit_btn = st.form_submit_button('検索')
         cancel_btn = st.form_submit_button('キャンセル')
