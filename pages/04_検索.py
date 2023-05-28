@@ -31,9 +31,11 @@ with col1:
                 result = df[df[func_category].str.contains('〇', na=False)]
                 result = result[result[category].str.contains('〇', na=False)]
                 image=list(result['image'])
+                name=list(result['料理名'])
                 result=result['料理名']
                 st.table(result)
                 
-                for i in image:
+                for i,n in zip(image,name):
                     image= Image.open(f'./data/{i}')
                     st.image(image,width=400)
+                    st.download_button(n,image)
