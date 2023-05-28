@@ -30,8 +30,8 @@ with col1:
             with col2:
                 result = df[df[func_category].str.contains('〇', na=False)]
                 result = result[result[category].str.contains('〇', na=False)]
-                image=list(result[result['image']])
-                result=result[result['料理名']]
+                image=list(result['image'])
+                result=result['料理名']
                 st.table(result)
                 
                 for i in image:
