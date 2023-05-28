@@ -8,7 +8,7 @@ st.set_page_config(
     initial_sidebar_state="auto")
 
 df = pd.read_pickle('./data/recipe_df.pkl')
-    
+
 st.title('レシピ検索')
 st.caption('条件でレシピが検索できます。')
 col1,col2 = st.columns(2)
