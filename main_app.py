@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(
     page_title="MAIN", 
     layout="wide", 
-    initial_sidebar_state="auto")
+    initial_sidebar_state="expanded")
 
 st.title('ご近所食事会レシピ集')
 st.header('多職種監修')
