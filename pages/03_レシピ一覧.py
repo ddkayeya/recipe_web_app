@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.set_page_config(
-    page_title="メニュー", 
+    page_title="レシピ一覧", 
     layout="wide", 
     initial_sidebar_state="auto")
 
